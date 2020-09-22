@@ -1,0 +1,28 @@
+{
+  "name": "booty-bounter-backend",
+  "version": "1.0.0",
+  "description": "backend for my new e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianARuff/booty-bounter-backend.git"
+  },
+  "keywords": [
+    "booty-bounter-backend"
+  ],
+  "author": "Brian Ruff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianARuff/booty-bounter-backend/issues"
+  },
+  "homepage": "https://github.com/BrianARuff/booty-bounter-backend#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "postgres": "^1.0.2"
+  }
+}
