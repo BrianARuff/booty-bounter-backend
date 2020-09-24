@@ -1,0 +1,24 @@
+User
+- username (varchar)
+- password (varchar)
+- dob (datetime)
+- ow_real_id (varchar)
+- reviewer (boolean)
+- timestamp (datetime)
+
+create table if not exists users 
+  (id serial primary key, 
+    username varchar(32), 
+    password varchar(32), 
+    dob date, 
+    ow_real_id varchar(32), 
+    reviewer boolean default false, 
+    timestamp date default current_date
+  );
+
+alter table users id serial primary key;
+
+Video
+- user_id (bigint)
+- title (varchar)
+- description (text)

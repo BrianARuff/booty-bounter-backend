@@ -19,8 +19,13 @@
     "url": "https://github.com/BrianARuff/booty-bounter-backend/issues"
   },
   "homepage": "https://github.com/BrianARuff/booty-bounter-backend#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "helmet": "^4.1.1"
+  },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.5",
     "postgres": "^1.0.2"
