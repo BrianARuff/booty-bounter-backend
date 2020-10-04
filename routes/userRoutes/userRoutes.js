@@ -1,6 +1,5 @@
 const router = require("express").Router();
-const postgres = require("postgres");
-const sql = postgres(process.env.PSQL_STRING);
+const sql = require("../../db/db.js");
 
 router.get("/", (req, res) => {
   try {
