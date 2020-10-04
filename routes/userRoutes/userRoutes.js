@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const router = require("../../middleware/middleware").router;
 const sql = require("../../db/db.js");
 
 router.get("/", (req, res) => {

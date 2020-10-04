@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 // app
-const app = require("./middleware/middleware.js");
+const app = require("./middleware/middleware.js").app;
 
 const userRoutes = require("./routes/userRoutes/userRoutes");
 
