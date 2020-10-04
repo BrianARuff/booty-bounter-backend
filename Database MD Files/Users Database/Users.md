@@ -1,3 +1,5 @@
+### Setup Database
+
 1. `create database booty_bounter_users;`
 2. `create table test (username char(5), age integer);`
 3. `connection string: postgres://postgres:1366@localhost:5432/booty_bounter`
@@ -11,3 +13,8 @@
         timestamp date default current_date
       );
    ```
+
+### Add constraints to column
+
+1. `alter table users add unique (username);`
+2. `alter table users add unique (ow_real_id);`

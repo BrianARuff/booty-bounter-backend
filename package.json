@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/BrianARuff/booty-bounter-backend#readme",
   "devDependencies": {
-    "helmet": "^4.1.1"
+    "helmet": "^4.1.1",
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
