@@ -1,12 +1,12 @@
-const router = require("../../middleware/middleware").router;
-const sql = require("../../db/db.js");
+const router = require("../middleware/middleware").router;
+const sql = require("../db/db.js");
 
-router.get("/", (req, res) => {
+router.get("/users", (req, res) => {
   try {
     const usersList = async () => await sql`select * from users;`;
     usersList()
       .then((users) => {
-        console.log(users);
+        // ***TESTING LOG*** console.log(users);
         return res.json(users);
       })
       .catch((error) => {
@@ -19,8 +19,11 @@ router.get("/", (req, res) => {
   }
 });
 
-router.post("/", (req, res) => {
+// Create New Account
+router.post("/users", (req, res) => {
   const user = req.body;
+  user.timestamp = new Date();
+  console.log("Requst Body", user);
   try {
     const newUser = async () =>
       await sql`

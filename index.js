@@ -3,10 +3,14 @@ require("dotenv").config();
 // app
 const app = require("./middleware/middleware.js").app;
 
-const userRoutes = require("./routes/userRoutes/userRoutes");
+const userRoutes = require("./routes/userRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 // routes
-app.use("/users", userRoutes);
+app.use(userRoutes);
+app.use(authRoutes);
 
 // port
-app.listen(4000, () => console.log("server running on port 4000"));
+app.listen(process.env.PORT, () =>
+  console.log("server running on port " + process.env.PORT)
+);
